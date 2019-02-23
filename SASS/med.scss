@@ -1,0 +1,115 @@
+@import "base/reset";
+
+
+@import "base/typography";
+
+
+@import "background/naslovna";
+
+body {
+    background-image: url(../img/tree-2916763_1920.pixabay.com.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@import "layout/header";
+
+#basicLine
+    { 
+ #firstLine 
+        { 
+    a:hover {
+        color: $background-color;
+        background-color: white;
+        transition: 500;
+            }
+    }
+}
+
+#dugme {
+    float:right;
+    width: 5em;
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: fixed;
+}
+
+@import "layout/section";
+
+$wth-color: rgba(253,249,255,.7);
+$txt-color:  rgba(5,11,11,.4);  
+  #cite {
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 90ex;
+    text-align: justify;
+    text-indent: 3em;
+    color: black;
+    background-color: $wth-color;
+    cite:nth-of-type(2) {
+        text-indent: 3em;
+            }
+      blockquote {
+          float: right;
+          color: red;
+          background-color: $wth-color;
+      }
+      margin-bottom: 3em;
+    }
+.mainSection {
+    width: 400px;
+    margin-bottom: 6ex;
+    .p1,
+    .p2, 
+    .p3 {
+        padding: 3px;
+        text-indent: 2em;
+        background: $wth-color;
+        color: black;
+        text-align: justify;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+#saveti {
+    color: yellow;
+    text-decoration: underline;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.honeySection {
+    display: none;
+    widt: 400px;
+    margin-left: 10%;
+    ul {
+        width: 600px;
+        text-align: justify;
+        margin-top: 5ex;
+        margin-bottom: 5ex;
+        padding: 3px;
+        text-indent: 2em;
+        background-color: $wth-color;
+        list-style-position: outside;
+        list-style-image: url("../img/bee-677330_1280.pixabay.com-croped.png");
+        ol {
+            list-style-position: inside;
+            list-style-image: none;
+        }
+    }
+}
+
+#saveti2 {
+    @extend #saveti;
+    margin-top: 3em;
+    float:right;
+}
+
+
+
+@import "layout/footer";

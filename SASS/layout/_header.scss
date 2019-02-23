@@ -1,0 +1,37 @@
+$background-color: rgba(49, 42, 42, .7);
+
+
+#zaglavlje {
+    #Naslov {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        color: #FFFF00;
+        text-shadow: 7px -3px 5px rgba(28,110,164,0.89);
+        font-size: 4em;
+    }
+    
+    #basicLine {
+        position: relative;
+        display:block;
+        border: solid $background-color 2px;
+        background-color: $background-color;
+        a {
+            display: inline-block;
+            padding-top: 6px;
+            padding-bottom: 6px; 
+            margin-left: 5ex;
+            font-size: 3ex;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: $background-color;
+                background-color: #FFE6B3;
+                transition: 500;
+                 }
+            }
+     
+            #pretraga {
+                 display: none;
+            }
+    }
+}

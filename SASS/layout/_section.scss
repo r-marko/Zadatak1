@@ -1,0 +1,35 @@
+section {
+    width: 500px;
+    position:relative;
+    display: block;
+    margin-left: 40ex;
+    margin-top: 30px;
+    article {
+         img,
+         video {
+             &:hover {
+                 cursor:pointer;
+             }
+             position: relative;
+             margin-top:3em;
+         }
+         h3 {
+             display: none;
+             &:hover {
+                 cursor:pointer;
+             }
+            text-align: center;
+            background-color: rgba(243, 241, 241, .6);
+            position: absolute;
+            margin-top:3em;
+            z-index: 4;
+            padding:3px 5px;
+       
+        }
+        ul {
+            display: none;
+            text-indent: 1em;
+            list-style-image: url("../img/bee-1886642_1920-cropped.pixabay.com.png"); 
+        }
+    }
+}

@@ -1,0 +1,24 @@
+footer {
+    display: block;
+    z-index: 5;
+    position: relative;
+   
+    background-image: url("../img/honey-3135266_1280.pixabay.com.png");
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+   // background-color: aquamarine;
+    
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    address, a {
+        margin-left: 6em;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+    }
+}
